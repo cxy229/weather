@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="@drawable/back3"
+    >
+
+    <TextView 
+        android:id="@+id/textViewCurrentCity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="currentCity"
+        android:layout_marginTop="15dp"
+        android:textSize="20dp"
+        
+        android:textColor="#003300"
+        android:paddingLeft="10dp"
+		android:paddingBottom="10dp"
+        />
+    <TextView 
+        android:id="@+id/textViewDate0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="date0"
+        android:layout_toRightOf="@id/textViewCurrentCity"
+        android:layout_marginTop="15dp"
+        android:textSize="20dp"
+		android:paddingBottom="10dp"
+		
+        />
+
+    <TextView 
+        android:id="@+id/textViewWeatherData0"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="weatherData0"
+        android:layout_below="@id/textViewCurrentCity"
+        android:layout_centerHorizontal="true"
+        android:textSize="35dp"
+        android:shadowColor="#f0f"
+		android:shadowDx="4"
+		android:shadowDy="4"
+		android:shadowRadius="2"
+		android:paddingLeft="60dp"
+        />
+   <!--   <ListView
+        android:id="@+id/ListView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewWeatherData0"
+        android:layout_marginTop="30dp"
+        >
+    </ListView>
+    -->
+    <ExpandableListView 
+        android:id="@+id/expandableListView0"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewWeatherData0"
+        android:layout_marginTop="30dp"
+        
+        >
+    </ExpandableListView>
+    
+</RelativeLayout>
